@@ -124,9 +124,9 @@ def get_script(_date=None):
 
     cfg = DOW_ITEMS[dow_name]
     extra_items = cfg.get('items', [])
-    logger.debug('extra_items: {}', extra_items)
+    logger.debug('extra_items: %s', extra_items)
     subjects = cfg.get('subjects', [])
-    logger.debug('subjects: {}', subjects)
+    logger.debug('subjects: %s', subjects)
 
     if subjects:
         yield SUBJECT_INTRO
